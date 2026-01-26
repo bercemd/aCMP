@@ -64,5 +64,5 @@ CHARMM
 ```
 *** Citation:
 ```
-To be added
+To be updated!
 ```
