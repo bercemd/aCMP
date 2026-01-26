@@ -1,0 +1,146 @@
+RESI PRL          0.00
+GROUP                   !       HD1 HD2
+ATOM N    N      -0.29  !     |   \ /
+ATOM CD   CP3     0.00  !     N---CD   HG1  ATOM CA   CP1     0.02
+ATOM HD1  HA2     0.09  !     |     \  /
+ATOM HD2  HA2     0.09  !     |      CG
+ATOM CA   CP1     0.02  !     |     /  \
+ATOM HA   HB1     0.09  !  HA-CA--CB   HG2
+GROUP                   !     |   / \
+ATOM CB   CP2    -0.18  !     | HB1 HB2
+ATOM HB1  HA2     0.09  !   O=C
+ATOM HB2  HA2     0.09  !     |
+GROUP
+ATOM CG   CP2    -0.18
+ATOM HG1  HA2     0.09
+ATOM HG2  HA2     0.09
+GROUP
+ATOM C    C       0.51
+ATOM O    O      -0.51
+GROUP                  !           O1=C1
+ATOM C1   C       0.55 !               |
+ATOM O1   O      -0.60 !               |
+ATOM C2   CTL2   -0.07 !          H2A-C2-H2B
+ATOM H2A  HAL2    0.06 !               |
+ATOM H2B  HAL2    0.06 !               |
+GROUP                  !               |
+ATOM C3   CTL2   -0.18 !          H3A-C3-H3B
+ATOM H3A  HAL2    0.09 !               |
+ATOM H3B  HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C4   CTL2   -0.18 !          H4A-C4-H4B
+ATOM H4A  HAL2    0.09 !               |
+ATOM H4B  HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C5   CTL2   -0.18 !          H5A-C5-H5B
+ATOM H5A  HAL2    0.09 !               |
+ATOM H5B  HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C6   CTL2   -0.18 !          H6A-C6-H6B
+ATOM H6A  HAL2    0.09 !               |
+ATOM H6B  HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C7   CTL2   -0.18 !          H7A-C7-H7B
+ATOM H7A  HAL2    0.09 !               |
+ATOM H7B  HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C8   CTL2   -0.18 !          H8A-C8-H8B
+ATOM H8A  HAL2    0.09 !               |
+ATOM H8B  HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C9   CTL2   -0.18 !          H9A-C9-H9B
+ATOM H9A  HAL2    0.09 !               |
+ATOM H9B  HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C10  CTL2   -0.18 !         H10A-C10-H10B
+ATOM H10A HAL2    0.09 !               |
+ATOM H10B HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C11  CTL2   -0.18 !         H11A-C11-H11B
+ATOM H11A HAL2    0.09 !               |
+ATOM H11B HAL2    0.09 !               |
+GROUP                  !               |
+ATOM C12  CTL3   -0.27 !         H12A-C12-H12B
+ATOM H12A HAL3    0.09 !               |
+ATOM H12B HAL3    0.09 !               |
+ATOM H12C HAL3    0.09 !               H12C
+
+BOND C  CA  C   +N
+BOND N  CA  CA  CB  CB  CG  CG  CD  N   CD
+BOND HA CA  HG1 CG  HG2 CG  HD1 CD  HD2 CD  HB1 CB  HB2 CB
+BOND N C1
+DOUBLE   O  C
+
+DOUBLE C1  O1
+BOND  C1  C2  C2  H2A  C2  H2B
+BOND  C2  C3  C3  H3A  C3  H3B
+BOND  C3  C4  C4  H4A  C4  H4B
+BOND  C4  C5  C5  H5A  C5  H5B
+BOND  C5  C6  C6  H6A  C6  H6B
+BOND  C6  C7  C7  H7A  C7  H7B
+BOND  C7  C8  C8  H8A  C8  H8B
+BOND  C8  C9  C9  H9A  C9  H9B
+BOND  C9  C10 C10 H10A C10 H10B
+BOND  C10 C11 C11 H11A C11 H11B
+BOND  C11 C12 C12 H12A C12 H12B
+BOND  C11 C12 C12 H12A C12 H12B C12 H12C
+
+!IMPR N -C CA CD
+IMPR C1 O1 N C2
+IMPR C CA +N O
+CMAP -C  N  CA  C   N  CA  C  +N
+ACCEPTOR O C
+ACCEPTOR O1 C1
+IC C1   CA   *N   CD    1.3366 122.9400  178.5100 112.7500  1.4624
+IC C1   N    CA   C     1.3366 122.9400  -76.1200 110.8600  1.5399
+IC N    CA   C    +N    1.4585 110.8600  180.0000 114.7500  1.3569
+IC +N   CA   *C   O     1.3569 114.7500  177.1500 120.4600  1.2316
+IC CA   C    +N   +CA   1.5399 116.1200  180.0000 124.8900  1.4517
+IC N    C    *CA  CB    1.4585 110.8600  113.7400 111.7400  1.5399
+IC N    C    *CA  HA    1.4585 110.8600 -122.4000 109.0900  1.0837
+IC N    CA   CB   CG    1.4585 102.5600   31.6100 104.3900  1.5322
+IC CA   CB   CG   CD    1.5399 104.3900  -34.5900 103.2100  1.5317
+IC CA   CG   *CB  HB1   1.4585 102.5600  120.0000 109.0200  1.1131
+IC CA   CG   *CB  HB2   1.4585 102.5600 -120.0000 109.0200  1.1131
+IC CB   CD   *CG  HG1   1.5399 104.3900  120.0000 112.9500  1.1077
+IC CB   CD   *CG  HG2   1.5399 104.3900 -120.0000 109.2200  1.1143
+IC N    CG   *CD  HD1   1.5322 103.2100  120.0000 110.0300  1.1137
+IC N    CG   *CD  HD2   1.5322 103.2100 -120.0000 110.0000  1.1144
+
+IC N    CA   C    O     1.3945 106.38    5.30 121.98  1.2956
+IC CA   N    C1   C2    1.4553 108.64  158.80 115.77  1.5434
+IC C2   N   *C1  O1     1.4534 115.77 -174.68 119.62  1.2281
+IC N    C1   C2   C3    1.4553 108.77  152.55 111.56  1.5614
+IC C3   C1   *C2  H2A   1.5614 111.56 -126.88 116.60  1.0567
+IC H2A  C1   *C2  H2B   1.0567 116.60 -120.46 107.56  1.0927
+IC C1   C2   C3   C4    1.5434 111.56  178.17 112.38  1.5543
+IC C4   C2   *C3  H3A   1.5543 112.38 -115.58 110.36  1.0691
+IC H3A  C2   *C3  H3B   1.0691 110.36 -116.74 109.97  1.1344
+IC C2   C3   C4   C5    1.5614 112.38  174.26 114.93  1.5290
+IC C5   C3   *C4  H4A   1.5290 114.93 -117.82 107.19  1.0636
+IC H4A  C3   *C4  H4B   1.0636 107.19 -118.11 109.41  1.1180
+IC C3   C4   C5   C6    1.5543 114.93  139.45 116.26  1.5437
+IC C6   C4   *C5  H5A   1.5437 116.26 -115.47 116.05  1.1088
+IC H5A  C4   *C5  H5B   1.1088 116.05 -122.13 108.08  1.1320
+IC C4   C5   C6   C7    1.5290 116.26  159.28 113.90  1.5449
+IC C7   C5   *C6  H6A   1.5449 113.90 -120.21 112.43  1.0817
+IC H6A  C5   *C6  H6B   1.0817 112.43 -112.42 110.24  1.0503
+IC C5   C6   C7   C8    1.5437 113.90  167.68 115.30  1.5615
+IC C8   C6   *C7  H7A   1.5615 115.30 -116.36 108.50  1.1480
+IC H7A  C6   *C7  H7B   1.1480 108.50 -115.94 110.56  1.1231
+IC C6   C7   C8   C9    1.5449 115.30  165.37 111.83  1.5514
+IC C9   C7   *C8  H8A   1.5514 111.83 -113.43 111.91  1.1377
+IC H8A  C7   *C8  H8B   1.1377 111.91 -118.34 108.18  1.0480
+IC C7   C8   C9   C10   1.5615 111.83  176.59 110.57  1.5526
+IC C10  C8   *C9  H9A   1.5526 110.57 -129.97 113.53  1.1310
+IC H9A  C8   *C9  H9B   1.1310 113.53 -109.70 107.39  1.1594
+IC C8   C9   C10  C11   1.5514 110.57 -177.26 112.26  1.5783
+IC C11  C9   *C10 H10A  1.5783 112.26 -123.45 106.63  1.1533
+IC H10A C9   *C10 H10B  1.1533 106.63 -118.25 115.85  1.0771
+IC C9   C10  C11  C12   1.5526 112.26 -163.15 112.58  1.5528
+IC C12  C10  *C11 H11A  1.5528 112.58 -121.90 102.65  1.0764
+IC H11A C10  *C11 H11B  1.0764 102.65 -122.46 109.95  1.1248
+IC C10  C11  C12  H12A  1.5331 109.01  -61.78 119.36  1.0834
+IC H12A C11  *C12 H12B  1.0834 119.36  138.24 116.61  1.0932
+IC H12A C11  *C12 H12C  1.0834 119.36 -107.69 109.08  1.1555
+
