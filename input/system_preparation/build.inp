@@ -1,0 +1,22 @@
+stream toppar.str
+
+read sequence card
+!* twenty seven residues
+!*
+*  FIRST SEQUENCE FOR SECOND IC TEST
+*
+    27
+prl arg gly pro arg gly pro arg gly pro hyp gly pro hyp gly pro hyp gly glu hyp gly glu hyp gly glu hyp gly
+
+GENERATE PROA first none last cter setup warn
+
+IC    PARA ALL  ! fill IC angles and bond values from parameters
+PRINT IC
+IC  SEED 1 N 1 CA 1 C
+IC  BILD
+PRINT     COORD
+
+open write unit 2 card name peptide.hyp.prl.pdb
+write coor pdb unit 2
+close unit 2
+stop
