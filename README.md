@@ -33,3 +33,18 @@ CONTACT:
 python contacts_multiseg_mda.py --traj_path=prod12.dcd --psf_path=copy12.psf --selseg="P010=P020=P030=P040=P050=P060=P070=P080=P090=P100=P110=P120" --out_path=contact12.dat
 ```
 
+RMSD:
+```
+python rmsd_mda.py --traj_path=assembly.dcd --psf_path=assembly.psf --pdb_path=assembly.pdb --fit_selection="(segid P001 and name CA)" --rmsd_selection="(segid P001 and name CA)" --out_path=rmsd.P001.dat
+```
+
+SALT BRIDGES:
+```
+python saltbridge_count_mda.py --traj_path=assembly.dcd --psf_path=assembly.psf --sela='resname ARG and (name NH1 or name NH2)' --selb='resname GLU and (name OE1 or name OE2)' --out_path=saltbridge.all.dat
+```
+
+DIHEDRALS:
+```
+python dihedral_mda.py --traj_path=assembly.dcd --psf_path=assembly.psf --selseg="(segid P001 and resid 2:26)" --out_path=dihedral.P001.out
+```
+
