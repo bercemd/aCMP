@@ -5,6 +5,7 @@ This repository contains data for the simulations of amphiphilic collagen-mimeti
 The ```input/system_preperation``` folder contains the files for preparing the initial pdb files. 
 To prepare the initial C<sub>12</sub>333 aCMP peptide, ```build.inp``` file is used as follows:
 ```
+export CHARMMEXEC="path_for_charmm/bin/charmm"
 $CHARMMEXEC < build.inp > build.out
 ```
 To prepare the concentrated aCMP systems, ```prep_system_rotate.py``` as follows:
@@ -48,3 +49,16 @@ DIHEDRALS:
 python dihedral_mda.py --traj_path=assembly.dcd --psf_path=assembly.psf --selseg="(segid P001 and resid 2:26)" --out_path=dihedral.P001.out
 ```
 
+*** Requirements:
+```
+Python version 3+
+
+MDAnalysis
+
+CHARMM
+
+```
+*** Citation:
+```
+To be added
+```
